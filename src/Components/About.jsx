@@ -17,7 +17,7 @@ const About = () => {
         <ul className=" text-base list-none py-5 text-yellow-500">
           <li className=" mb-3">Open Source Lover</li>
           <li className=" mb-3">Front End Developement</li>
-          <li className="">javascript >>>>>>> Python</li>
+          <li className="">javascript HTML CSS React Python</li>
         </ul>
           <div className=" grid grid-cols-6 justify-items-center h-fit mb-10 ">
               <a>
