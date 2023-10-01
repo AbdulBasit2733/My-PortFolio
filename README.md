@@ -11,3 +11,6 @@ Currently, two official plugins are available:
 git remote add origin https://github.com/AbdulBasit2733/My-PortFolio.git
 git branch -M main
 git push -u origin main
+
+Refered This to deploy:
+https://medium.com/@badreddine.boudaoud21/create-a-react-app-with-vite-and-deploy-it-on-github-48b82e19f821
