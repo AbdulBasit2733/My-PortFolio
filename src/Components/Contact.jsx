@@ -16,13 +16,13 @@ const Contact = () => {
         </div>
         <div className=" flex gap-5 mt-5 p-10">
           <a className="" href="https://github.com/AbdulBasit2733">
-            <img className=" border-black border-2 bg-white rounded-full" width="40px" src="./github-sign.png" />
+            <img className=" border-black border-2 bg-white rounded-full" width="40px" src="https://www.freeiconspng.com/uploads/git-github-hub-icon-25.png" />
           </a>
           <a href="https://www.linkedin.com/in/abdul-basit-khan-2b6a3318b/">
-            <img width="40px" src="./linkedin.png" />
+            <img width="40px" src="https://www.freeiconspng.com/uploads/linkedin-logo-3.png" />
           </a>
           <a href="mailto:abdulbasitkhan2733@gmail.com">
-            <img width="40px" src="./gmail.png" />
+            <img width="40px" src="https://www.freeiconspng.com/uploads/gmail-logo-icon-4.png" />
           </a>
         </div>
       </div>

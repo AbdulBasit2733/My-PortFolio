@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className=" md:w-full bg-gradient-to-r from-gray-700 via-gray-900 to-black md:shadow-md md:shadow-slate-400 flex justify-between items-center px-4 md:px-4 md:py-5 ">
       <div className=" text-2xl font-bold text-white">Abdul Basit</div>
       <ul className=" sm:flex font-semibold justify-center my-[10px]">
-        <Link className=" mx-[10px] mb-[10px] cursor-pointer text-white" to="/My-PortFolio/">
+        <Link className=" mx-[10px] mb-[10px] cursor-pointer text-white" to="/home">
           Home
         </Link>
         <Link

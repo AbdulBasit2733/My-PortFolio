@@ -5,7 +5,7 @@ const About = () => {
     <div className=" md:min-h-screen grid md:grid-cols-2 sm:grid-cols-1 gap-5 sm:min-h-fit bg-gradient-to-r from-gray-700 via-gray-900 to-black px-20 py-10 place-content-center justify-center items-center">
       <div className=" md:w-80 md:h-fit place-items-center shadow-2xl rounded mb-10 justify-center items-center mx-auto ">
         <div className=" overflow-hidden rounded-full border-8 border-purple-600">
-          <img src="./public/MyImage.jpg" alt="MyImage" className=" hover:scale-125 duration-700  cursor-zoom-in" />
+          <img src="https://avatars.githubusercontent.com/u/99525295?v=4" alt="MyImage" className=" hover:scale-125 duration-700  cursor-zoom-in" />
         </div>
         <div className="px-6 py-10 text-white font-semibold">
           <h3>MySelf Abdul Basit Khan</h3>
@@ -21,25 +21,25 @@ const About = () => {
         </ul>
           <div className=" grid grid-cols-6 justify-items-center h-fit mb-10 ">
               <a>
-                  <img className="hover:opacity-40" width="60%" src="./reacticon.png" alt="React Js" />
+                  <img className="hover:opacity-40" width="60%" src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="React Js" />
               </a>
               <a>
-                  <img className="hover:opacity-40" width="60%"  src="./Nextjs.png" alt="Next Js" />
+                  <img className="hover:opacity-40" width="60%"  src="https://cdn2.iconfinder.com/data/icons/designer-skills/128/code-programming-javascript-software-develop-command-language-512.png" alt="javaScript" />
               </a>
               <a className="mr-4">
-                  <img className="hover:opacity-40" width="60%" src="./redux.png" alt="Redux Toolkit" />
-              </a>
-              <a className="mr-4">
-                  <img className="hover:opacity-40" width="60%" src="./TypeScript.png" alt="TypeSript" />
+                  <img className="hover:opacity-40" width="60%" src="https://assets.stickpng.com/images/5848309bcef1014c0b5e4a9a.png" alt="Redux Toolkit" />
               </a>
               <a >
-                  <img className="hover:opacity-40" width="60%" src="./tailwind.png" alt="Tailwind Css" />
+                  <img className="hover:opacity-40" width="60%" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png" alt="Css" />
               </a>
               <a >
-                  <img className="hover:opacity-40" width="60%" src="./Node.png" alt="Tailwind Css" />
+                  <img className="hover:opacity-40" width="60%" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-256.png" alt="HTML" />
               </a>
               <a >
-                  <img className="hover:opacity-40" width="60%" src="./javascript.png" alt="Tailwind Css" />
+                  <img className="hover:opacity-40" width="80%" src="https://git-scm.com/images/logo@2x.png" alt="Git" />
+              </a>
+              <a className=" mb-2" >
+                  <img className="hover:opacity-40" width="60%" src="https://www.freeiconspng.com/uploads/git-github-hub-icon-25.png" alt="Git" />
               </a>
           </div>
       </div>
