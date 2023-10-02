@@ -17,7 +17,6 @@ const App = () => {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contactme" element={<Contact />} />
           <Route path="/education" element={<Education />} />
-          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
     </>
