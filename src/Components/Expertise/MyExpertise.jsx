@@ -6,10 +6,12 @@ const MyExpertise = () => {
   // })
   return (
     <div className="">
-      <h1 className=" mb-16 text-3xl font-bold text-center mt-10">My Expertise</h1>
-      <div className="box-container flex items-center  py-16">
-        <div className="flex justify-center w-fit px-14">
-          <div className="text-center space-y-4">
+      <h1 className=" lg:mb-16 text-3xl font-bold text-center mt-10">
+        My Expertise
+      </h1>
+      <div className="box-container md:flex md:justify-center md:items-center lg:py-12 py-10">
+        <div className="flex justify-center w-fit md:px-16 px-10">
+          <div className="text-center space-y-4 mb-10">
             {/* Text Section */}
             <h1 className="text-4xl font-semibold">
               I Love These Technologies

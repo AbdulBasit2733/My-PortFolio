@@ -8,7 +8,7 @@ const Navbar = () => {
       title: "Home",
       link: "/",
     },
-    
+
     {
       id: 2,
       title: "About",
@@ -46,22 +46,23 @@ const Navbar = () => {
     },
   ]);
   return (
-    <div className="main bg-gray-200 h-20 flex justify-between items-center px-[8.6rem]">
+    <div className="main bg-gray-200 sm:h-20 h-16 flex justify-between items-center lg:px-[8.6rem] md:px[4rem] px-[2rem]">
       <div>
         {/* Brand Logo */}
         <h1 className="text-2xl text-orange-500 font-bold">{brandName}</h1>
       </div>
-      <div className="flex space-x-6 text-sm font-semibold">
+      <div className="hidden md:flex space-x-6 text-sm font-semibold">
         {/* Nav as */}
         {menuLinks.map((link) => (
           <a key={link.id} href={link.link} className="hover:text-orange-500">
             {link.title}
           </a>
         ))}
+        {/* Hamburger Menu */}
       </div>
       <div>
         {/* button */}
-        <button className="px-4 py-2 bg-orange-500 hover:bg-white shadow-lg rounded-full font-medium text-sm">
+        <button className="px-4 py-2 bg-orange-500 hover:bg-white shadow-lg rounded-full font-medium text-sm  hidden sm:block">
           Hire Me
         </button>
       </div>

@@ -1,10 +1,10 @@
 const Home = () => {
   return (
     <>
-      <div className="main-container flex">
+      <div className="main-container md:flex mt-10">
         <div className="w-full flex items-center justify-center">
           {/* Text Section */}
-          <div className="w-2/3 ms-11">
+          <div className="md:w-2/3 ms-11">
             <h3 className="text-xl font-semibold uppercase">
               hello ! <span></span>
             </h3>
@@ -47,7 +47,7 @@ const Home = () => {
           {/* Image Section */}
           <img
             src="/Hero.jpg"
-            className="rounded-full shadow-lg shadow-orange-300  w-2/3"
+            className="rounded-full shadow-lg shadow-orange-300  w-2/3 sm:w-1/2 sm:h-fit md:w-4/5 lg:w-2/3"
           />
         </div>
       </div>

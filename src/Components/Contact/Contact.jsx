@@ -1,9 +1,8 @@
 import React from "react";
-import Footer from "../Footer/Footer";
 
 const Contact = () => {
   return (
-    <div className="my-5">
+    <div className="md:mb-20 md:mt-5 my-10">
       <h1 className="text-3xl font-bold text-center">Contact Me</h1>
       <div className="flex justify-center mt-10">
         <form className="flex-col flex-wrap shadow-xl rounded-md space-y-6 p-10">
