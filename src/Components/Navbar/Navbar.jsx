@@ -1,7 +1,6 @@
 import { useState } from "react";
-
+import { Link, useNavigate } from "react-router-dom";
 const Navbar = () => {
-  const [brandName, setBrandName] = useState("Abdul Basit");
   const [menuLinks, setMenuLinks] = useState([
     {
       id: 1,
@@ -21,8 +20,8 @@ const Navbar = () => {
     },
     {
       id: 4,
-      title: "My Expertise",
-      link: "/myexpertise",
+      title: "Skills",
+      link: "/myskills",
     },
     {
       id: 5,
@@ -45,26 +44,47 @@ const Navbar = () => {
       link: "/contact",
     },
   ]);
+  const [brand, setBrand] = useState("AK");
+  const [isOpen, setIsOpen] = useState(false);
+  // const navigate = useNavigate();
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+  };
   return (
-    <div className="main bg-gray-200 sm:h-20 h-16 flex justify-between items-center lg:px-[8.6rem] md:px[4rem] px-[2rem]">
-      <div>
-        {/* Brand Logo */}
-        <h1 className="text-2xl text-orange-500 font-bold">{brandName}</h1>
-      </div>
-      <div className="hidden md:flex space-x-6 text-sm font-semibold">
-        {/* Nav as */}
+    <div className="header fixed top-0 shadow-xl h-16 bg-white flex justify-between items-center w-full md:px-10">
+      <h1 className="text-2xl font-bold px-10 md:px-0">{brand}</h1>
+      {isOpen && (
+        <div className="text-2xl bg-white absolute top-[4rem] w-full flex flex-col items-center space-y-10 py-10 h-fit sm:hidden  transition-all ease-in duration-200">
+          {menuLinks.map((link) => (
+            <a
+              key={link.id}
+              href={link.link}
+              className="font-semibold hover:text-orange-500"
+            >
+              {link.title}
+            </a>
+          ))}
+        </div>
+      )}
+      <div className="text-sm top-[4rem] items-center space-x-5 hidden md:block px-10">
         {menuLinks.map((link) => (
-          <a key={link.id} href={link.link} className="hover:text-orange-500">
+          <a
+            key={link.id}
+            href={link.link}
+            className="font-semibold hover:text-orange-500"
+          >
             {link.title}
           </a>
         ))}
-        {/* Hamburger Menu */}
       </div>
-      <div>
-        {/* button */}
-        <button className="px-4 py-2 bg-orange-500 hover:bg-white shadow-lg rounded-full font-medium text-sm  hidden sm:block">
+      <div className="hidden md:block">
+        <a className="bg-orange-500 text-white rounded-xl px-3 py-2 font-semibold hover:bg-white shadow-lg hover:text-black duration-500 transition-all ease-in">
           Hire Me
-        </button>
+        </a>
+      </div>
+      <div className="px-10 md:hidden">
+        <i className="bx bx-menu bx-md" onClick={toggleNavbar}></i>
       </div>
     </div>
   );

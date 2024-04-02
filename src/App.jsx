@@ -6,6 +6,9 @@ import Services from "./Components/Services/Services";
 import MyExpertise from "./Components/Expertise/MyExpertise";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Contact/Contact";
+import {Confirmation, Notconfirm} from "./Components/Contact/Confirmation";
+import ReadMore from "./Components/About/ReadMore";
+import Projects from "./Components/Projects/Projects";
 const App = () => {
   return (
     <>
@@ -13,15 +16,17 @@ const App = () => {
       <Router>
         <Routes>
           <Route
-            path="/"
+            path="/" 
+            exact
             element={
               <>
                 <Home />
                 <About />
                 <Services />
-                <MyExpertise/>
-                <Contact/>
-                <Footer/>
+                <MyExpertise />
+                <Projects/>
+                <Contact />
+                <Footer />
               </>
             }
           />
@@ -29,8 +34,12 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           {/* <Route path="/blogs" element={<Home />} /> */}
           {/* <Route path="/education" element={<Home />} /> */}
-          <Route path="/myexpertise" element={<MyExpertise />} />
+          <Route path="/myskills" element={<MyExpertise />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/contact/confirmation" element={<Confirmation />} />
+          <Route path="/contact/error" element={<Notconfirm />} />
+          <Route path="/about/readmore" element={<ReadMore />} />
         </Routes>
       </Router>
     </>
