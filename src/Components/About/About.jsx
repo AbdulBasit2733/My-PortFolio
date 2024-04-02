@@ -14,7 +14,7 @@ const About = () => {
     },
   });
   return (
-    <div className="about-section lg:py-10 lg:mt-6 py-16 bg-gray-100 mt-10">
+    <div className="about-section lg:pt-16 md:pt-10 py-16 bg-gray-100 mt-10">
       <h1 className="text-center pb-16 text-4xl font-bold">About Me</h1>
       <div className="md:flex items-center">
         {/* Image */}

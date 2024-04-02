@@ -1,7 +1,7 @@
 const Services = () => {
   return (
     <>
-      <div className="main-container py-16">
+      <div className="main-container py-28">
         <h1 className="text-4xl font-bold text-center">Services</h1>
         <div className="services-container flex justify-center space-x-10 mt-12 px-10">
           <div className="service-1 bg-slate-100 text-center p-5 space-y-4 shadow-lg rounded-xl w-full sm:w-fit md:w-[30rem] lg:w-1/2 ">

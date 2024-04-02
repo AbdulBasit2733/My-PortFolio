@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <div className="mt-5">
-      <h1 className="text-2xl md:text-4xl font-bold text-center">Projects</h1>
+    <div className="pt-24">
+      <h1 className="text-3xl md:text-4xl font-bold text-center">Projects</h1>
       <div className="my-10 md:flex md:flex-row md:space-y-0 md:space-x-10 flex-col justify-center space-y-20 items-center px-10">
         <div className="shadow-xl sm:w-[25rem] sm:h-[33rem]  text-justify">
           <Link to={"https://insta-clone-abdulbasit.vercel.app/"}>
