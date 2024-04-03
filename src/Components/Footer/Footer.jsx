@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
-    <div className="py-5 bg-gray-100 flex justify-between items-center sm:px-20 md:px-10 lg:px-44 px-8 text-sm">
+    <div>
+
+    
+    <div className=" py-5 bg-gray-100 flex justify-between items-center sm:px-20 md:px-10 lg:px-44 px-8 text-sm">
       <div>
         <p className="flex space-x-5 items-center">
           <p className="font-bold text-orange-500">
@@ -13,19 +18,20 @@ const Footer = () => {
         </p>
       </div>
       <div className="flex md:space-x-5 space-x-2">
-        <a
+        <Link
           href="/about"
           className="font-semibold hover:text-orange-500 hover:underline"
         >
           About
-        </a>
-        <a
+        </Link>
+        <Link
           href="/contact"
           className="font-semibold hover:text-orange-500 hover:underline"
         >
           Contact
-        </a>
+        </Link>
       </div>
+    </div>
     </div>
   );
 };

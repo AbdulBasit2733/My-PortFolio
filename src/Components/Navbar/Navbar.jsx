@@ -21,7 +21,7 @@ const Navbar = () => {
     {
       id: 4,
       title: "Skills",
-      link: "/myskills",
+      link: "/skills",
     },
     {
       id: 5,
@@ -39,7 +39,7 @@ const Navbar = () => {
     //   link: "/education",
     // },
     {
-      id: 5,
+      id: 6,
       title: "Contact",
       link: "/contact",
     },
@@ -57,34 +57,34 @@ const Navbar = () => {
       {isOpen && (
         <div className="text-2xl bg-white absolute top-[4rem] w-full flex flex-col items-center space-y-10 py-10 h-fit sm:hidden  transition-all ease-in duration-200">
           {menuLinks.map((link) => (
-            <a
+            <Link
               key={link.id}
-              href={link.link}
+              to={link.link}
               className="font-semibold hover:text-orange-500"
             >
               {link.title}
-            </a>
+            </Link>
           ))}
         </div>
       )}
       <div className="text-sm top-[4rem] items-center space-x-5 hidden md:block px-10">
         {menuLinks.map((link) => (
-          <a
+          <Link
             key={link.id}
-            href={link.link}
+            to={link.link}
             className="font-semibold hover:text-orange-500"
           >
             {link.title}
-          </a>
+          </Link>
         ))}
       </div>
       <div className="hidden md:block">
-        <a
-          href="https://drive.google.com/file/d/188-WB2dcYF2LiKuS7hBFPl9wGWGACbGB/view?usp=drive_link"
+        <Link
+          to="https://drive.google.com/file/d/188-WB2dcYF2LiKuS7hBFPl9wGWGACbGB/view?usp=drive_link"
           className="bg-orange-500 text-white rounded-xl px-3 py-2 font-semibold hover:bg-white shadow-lg hover:text-black duration-500 transition-all ease-in"
         >
           Hire Me
-        </a>
+        </Link>
       </div>
       <div className="px-10 md:hidden">
         <i className="bx bx-menu bx-md" onClick={toggleNavbar}></i>

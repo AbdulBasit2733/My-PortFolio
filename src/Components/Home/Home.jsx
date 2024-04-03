@@ -40,12 +40,12 @@ const Home = () => {
               ></Link>
             </div>
             <br />
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className=" text-white px-3 py-2 mt-5 rounded-xl shadow-xl bg-orange-500 font-semibold hover:bg-white hover:text-black duration-500 transition-all ease-in"
             >
               Contact Me
-            </a>
+            </Link>
           </div>
         </div>
         <div className="w-full flex justify-center mt-4">

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const [data, setData] = useState({
@@ -33,12 +34,12 @@ const About = () => {
             <p className="line-clamp-3">{data.desc1}</p>
             <p className="line-clamp-3">{data.desc2}</p>
             <br />
-            <a
-              href={data.actionButton.link}
+            <Link
+              to={data.actionButton.link}
               className="text-white px-3 py-2 mt-5 rounded-xl shadow-xl bg-orange-500 font-semibold hover:bg-white duration-500 transition-all ease-in hover:text-black"
             >
               {data.actionButton.title}
-            </a>
+            </Link>
           </div>
         </div>
       </div>
