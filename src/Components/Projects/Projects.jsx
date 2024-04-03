@@ -11,11 +11,11 @@ const Projects = () => {
             <img
               src="/instagram.png"
               alt="instagram-clone"
-              className="w-full md:h-[13rem]"
+              className="w-full md:h-[14rem]"
             />
-            <div className="px-5 py-5 space-y-3">
+            <div className="px-5 sm:pt-10 py-5">
               <h1 className="text-xl font-semibold">InstaGram Clone</h1>
-              <p>
+              <p className="text-sm sm:my-4 my-6">
                 The Instagram Clone is a full-stack web application developed to
                 mimic the functionalities of the popular social media platform.
                 Built using React.js for the frontend, Zustand for state
@@ -35,15 +35,15 @@ const Projects = () => {
           </Link>
         </div>
         <div className="shadow-xl sm:w-[25rem] sm:h-[33rem] text-justify">
-          <Link to={"https://insta-clone-abdulbasit.vercel.app/"}>
+          <Link to={""}>
             <img
-              src=""
-              alt="instagram-clone"
-              className="w-full md:h-[13rem] "
+              src="/homelyhub.png"
+              alt="Homely Hub"
+              className="w-full md:h-[14rem] "
             />
-            <div className="px-5 py-5 space-y-3">
+            <div className="px-5 sm:pt-10 py-5">
               <h1 className="text-xl font-semibold">HomelyHub</h1>
-              <p>
+              <p className="text-sm sm:my-4 my-6">
                 Homely Hub is a comprehensive MERN (MongoDB, Express.js,
                 React.js, Node.js) stack application designed to simplify the
                 process of finding and booking guest houses and flats for

@@ -79,7 +79,10 @@ const Navbar = () => {
         ))}
       </div>
       <div className="hidden md:block">
-        <a className="bg-orange-500 text-white rounded-xl px-3 py-2 font-semibold hover:bg-white shadow-lg hover:text-black duration-500 transition-all ease-in">
+        <a
+          href="https://drive.google.com/file/d/188-WB2dcYF2LiKuS7hBFPl9wGWGACbGB/view?usp=drive_link"
+          className="bg-orange-500 text-white rounded-xl px-3 py-2 font-semibold hover:bg-white shadow-lg hover:text-black duration-500 transition-all ease-in"
+        >
           Hire Me
         </a>
       </div>

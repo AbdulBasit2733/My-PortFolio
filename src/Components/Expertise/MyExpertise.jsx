@@ -15,14 +15,21 @@ const MyExpertise = () => {
               I Love These Technologies
             </h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Passionate about JavaScript and React.js, crafting dynamic and
+              responsive web applications with HTML and CSS.
             </p>
-
+            <p>
+              Enthusiastic about state management with Redux Toolkit, and
+              committed to efficient version control with Git and GitHub.
+            </p>
+            <br/>
             {/* This Button Should Download The CV */}
-            <button className="px-3 py-2 mt-5 rounded-xl shadow-xl bg-orange-500 font-semibold text-white hover:bg-white hover:text-black duration-500 transition-all ease-in">
+            <a
+              href="https://drive.google.com/file/d/188-WB2dcYF2LiKuS7hBFPl9wGWGACbGB/view?usp=drive_link"
+              className="px-3 py-2 mt-5 rounded-xl shadow-xl bg-orange-500 font-semibold text-white hover:bg-white hover:text-black duration-500 transition-all ease-in"
+            >
               Hire Me
-            </button>
+            </a>
           </div>
         </div>
         <div className="flex justify-center  items-center gap-4 flex-wrap h-fit px-10 py-20">

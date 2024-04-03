@@ -10,7 +10,7 @@ const ReadMore = () => {
     My journey into the world of frontend development began with a deep fascination for creating engaging and responsive web applications. This passion led me to master technologies like React.js, HTML, CSS, and JavaScript, enabling me to craft dynamic user interfaces and seamless user experiences.`,
   });
   return (
-    <div className=" px-10 py-14 text-center sm:px-20">
+    <div className=" px-10 py-20 md:pt-28 text-center sm:px-20">
       <div className="flex justify-center items-center">
         <img
           src={data.image}
