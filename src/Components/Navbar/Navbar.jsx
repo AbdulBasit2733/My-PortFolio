@@ -79,12 +79,14 @@ const Navbar = () => {
         ))}
       </div>
       <div className="hidden md:block">
-        <Link
-          to="https://drive.google.com/file/d/188-WB2dcYF2LiKuS7hBFPl9wGWGACbGB/view?usp=drive_link"
+        <a
+          href="https://drive.google.com/file/d/188-WB2dcYF2LiKuS7hBFPl9wGWGACbGB/view?usp=drive_link"
           className="bg-orange-500 text-white rounded-xl px-3 py-2 font-semibold hover:bg-white shadow-lg hover:text-black duration-500 transition-all ease-in"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Hire Me
-        </Link>
+        </a>
       </div>
       <div className="px-10 md:hidden">
         <i className="bx bx-menu bx-md" onClick={toggleNavbar}></i>

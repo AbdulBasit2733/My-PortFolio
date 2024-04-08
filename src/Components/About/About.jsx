@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   const [data, setData] = useState({
-    image: "/2.jpg",
+    image: "public/2.jpg",
     title: "FrontEnd Developer",
     desc1: `I am Abdul Basit Khan, a dedicated frontend developer based in Aurangabad, India. Currently pursuing my Bachelor of Technology (B.Tech) at MIT Aurangabad, I hold a strong academic record with a 7.23 CGPA. Prior to this, I completed my Diploma in Electrical Engineering from Government Polytechnic Aurangabad with an impressive 86.53%.`,
     desc2: `Driven by a passion for technology, I achieved notable success during my academic years, scoring 87.6% in the 10th Standard (SSC) examinations, including a remarkable 99 out of 100 in Mathematics.
@@ -22,7 +22,7 @@ const About = () => {
         <div className=" w-full flex justify-center">
           <img
             src={data.image}
-            className="rounded-full border mb-3 w-2/3 sm:w-1/2 sm:h-fit md:w-4/5 lg:w-2/4"
+            className="rounded-full border mb-3 w-2/3 sm:w-1/2 sm:h-fit md:w-2/3 lg:w-2/4"
             alt="about-image"
           />
         </div>

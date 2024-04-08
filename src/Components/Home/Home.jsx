@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -9,7 +10,7 @@ const Home = () => {
           <div className="md:w-2/3 ms-11">
             <div className="flex">
               <h3 className="text-xl font-semibold uppercase">hello !</h3>
-              <img src="/wave.gif" className="text-orange-500" width={30} />
+              <img src="public/wave.gif" className="text-orange-500" width={30} />
             </div>
 
             <h1 className="text-5xl text-orange-500 mt-4 font-bold">
@@ -26,20 +27,28 @@ const Home = () => {
               that leave a lasting impact.
             </p>
             <div className="icons-container space-x-8 my-5">
-              <Link
-                to={"https://www.linkedin.com/in/abdul-basit-khan-2b6a3318b/"}
+              {/* Anchor tags for external links */}
+              <a
+                href="https://www.linkedin.com/in/abdul-basit-khan-2b6a3318b/"
                 className="bx bxl-linkedin bx-sm bx-border-circle bg-orange-500 text-white hover:bg-white hover:text-orange-500 duration-500 transition-all ease-in"
-              ></Link>
-              <Link
-                to={"/"}
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="https://github.com/"
                 className="bx bxl-github bx-sm bx-border-circle bg-orange-500 text-white hover:bg-white hover:text-orange-500 duration-500 transition-all ease-in"
-              ></Link>
-              <Link
-                to={"mailto:abdulbasitkhan2733@gmail.com"}
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
+              <a
+                href="mailto:abdulbasitkhan2733@gmail.com"
                 className="bx bxl-gmail bx-sm bx-border-circle bg-orange-500 text-white hover:bg-white hover:text-orange-500 duration-500 transition-all ease-in"
-              ></Link>
+                target="_blank"
+                rel="noopener noreferrer"
+              ></a>
             </div>
             <br />
+            {/* Internal link within your React app */}
             <Link
               to="/contact"
               className=" text-white px-3 py-2 mt-5 rounded-xl shadow-xl bg-orange-500 font-semibold hover:bg-white hover:text-black duration-500 transition-all ease-in"
@@ -51,7 +60,8 @@ const Home = () => {
         <div className="w-full flex justify-center mt-4">
           {/* Image Section */}
           <img
-            src="/3.jpg"
+            src="public/3.jpg"
+            alt="Profile"
             className="rounded-full shadow-xl w-2/3 sm:w-1/2 sm:h-fit md:w-4/5 lg:w-2/4"
           />
         </div>
