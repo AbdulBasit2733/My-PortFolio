@@ -52,7 +52,7 @@ const Home = () => {
           {/* Image Section */}
           <img
             src="/3.jpg"
-            className="rounded-full shadow-xl w-2/3 sm:w-1/2 sm:h-fit md:w-4/5 lg:w-2/3"
+            className="rounded-full shadow-xl w-2/3 sm:w-1/2 sm:h-fit md:w-4/5 lg:w-2/4"
           />
         </div>
       </div>
