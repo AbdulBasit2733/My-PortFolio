@@ -6,13 +6,14 @@ const Projects = () => {
     <div className="pt-24">
       <h1 className="text-3xl md:text-4xl font-bold text-center">Projects</h1>
       <div className="my-10 md:flex md:flex-row md:space-y-0 md:space-x-10 flex-col justify-center space-y-20 items-center px-10">
-        <div className="shadow-xl sm:w-[25rem] sm:h-[33rem]  text-justify">
+        <div className="shadow-xl sm:w-[25rem] sm:h-[33rem] text-justify rounded-lg">
           <Link to={"https://insta-clone-abdulbasit.vercel.app/"}>
             <img
               src="/instagram.png"
               alt="instagram-clone"
               className="w-full md:h-[14rem]"
             />
+            <hr/>
             <div className="px-5 sm:pt-10 py-5">
               <h1 className="text-xl font-semibold">InstaGram Clone</h1>
               <p className="text-sm sm:my-4 my-6">
@@ -34,7 +35,7 @@ const Projects = () => {
             </div>
           </Link>
         </div>
-        <div className="shadow-xl sm:w-[25rem] sm:h-[33rem] text-justify">
+        <div className="shadow-xl sm:w-[25rem] sm:h-[33rem] text-justify rounded-lg">
           <Link to={""}>
             <img
               src="/homelyhub.png"

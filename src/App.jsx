@@ -17,26 +17,27 @@ const App = () => {
       <Routes>
         <Route
           exact
-          path="/"
+          path="/My-PortFolio"
           element={
             <>
               <Home />
               <About />
               <MyExpertise />
+              <Services/>
               <Projects />
               <Contact />
               <Footer/>
             </>
           }
         />
-        <Route path="/about" element={<About />} />
-        <Route path="/about/readmore" element={<ReadMore />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<MyExpertise />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/contact/confirm" element={<Confirmation />} />
-        <Route path="/contact/notconfirm" element={<Notconfirm />} />
+        <Route path="/My-PortFolio/about" element={<About />} />
+        <Route path="/My-PortFolio/about/readmore" element={<ReadMore />} />
+        <Route path="/My-PortFolio/projects" element={<Projects />} />
+        <Route path="/My-PortFolio/skills" element={<MyExpertise />} />
+        <Route path="/My-PortFolio/services" element={<Services />} />
+        <Route path="/My-PortFolio/contact" element={<Contact />} />
+        <Route path="/My-PortFolio/contact/confirm" element={<Confirmation />} />
+        <Route path="/My-PortFolio/contact/notconfirm" element={<Notconfirm />} />
       </Routes>
     </BrowserRouter>
   );

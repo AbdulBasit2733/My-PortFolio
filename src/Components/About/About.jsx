@@ -15,14 +15,14 @@ const About = () => {
     },
   });
   return (
-    <div className="about-section lg:pt-16 md:pt-10 py-16 bg-gray-100 mt-10">
+    <div className="about-section lg:mt-16 md:pt-10 py-16 bg-gray-100 mt-10">
       <h1 className="text-center pb-16 text-4xl font-bold">About Me</h1>
       <div className="md:flex items-center">
         {/* Image */}
         <div className=" w-full flex justify-center">
           <img
             src={data.image}
-            className="rounded-full border mb-3 w-2/3 sm:w-1/2 sm:h-fit md:w-4/5 lg:w-2/3"
+            className="rounded-full border mb-3 w-2/3 sm:w-1/2 sm:h-fit md:w-4/5 lg:w-2/4"
             alt="about-image"
           />
         </div>

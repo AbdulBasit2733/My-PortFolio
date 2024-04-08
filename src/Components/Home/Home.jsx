@@ -9,7 +9,7 @@ const Home = () => {
           <div className="md:w-2/3 ms-11">
             <div className="flex">
               <h3 className="text-xl font-semibold uppercase">hello !</h3>
-              <img src="./wave.gif" className="text-orange-500" width={30} />
+              <img src="/wave.gif" className="text-orange-500" width={30} />
             </div>
 
             <h1 className="text-5xl text-orange-500 mt-4 font-bold">
