@@ -52,7 +52,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="header fixed top-0 shadow-xl h-16 bg-white flex justify-between items-center w-full md:px-10">
+    <div className="header fixed top-0 shadow-lg h-16 bg-white flex justify-between items-center w-full md:px-10">
       <h1 className="text-2xl font-bold px-10 md:px-0">{brand}</h1>
       {isOpen && (
         <div className="text-2xl bg-white absolute top-[4rem] w-full flex flex-col items-center space-y-10 py-10 h-fit sm:hidden  transition-all ease-in duration-200">
