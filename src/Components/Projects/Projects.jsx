@@ -9,7 +9,7 @@ const Projects = () => {
         <div className="shadow-xl sm:w-[25rem] sm:h-[33rem] text-justify rounded-lg">
           <Link to={"https://insta-clone-abdulbasit.vercel.app/"}>
             <img
-              src="public/instagram.png"
+              src="/instagram.png"
               alt="instagram-clone"
               className="w-full md:h-[14rem]"
             />
@@ -40,7 +40,7 @@ const Projects = () => {
         <div className="shadow-xl sm:w-[25rem] sm:h-[33rem] text-justify rounded-lg">
           <Link to={""}>
             <img
-              src="public/homelyhub.png"
+              src="/homelyhub.png"
               alt="Homely Hub"
               className="w-full md:h-[14rem] "
             />

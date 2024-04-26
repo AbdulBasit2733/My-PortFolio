@@ -6,7 +6,7 @@ const Services = () => {
         <div className="services-container flex justify-center space-x-10 mt-12 px-10">
           <div className="service-1 bg-slate-100 text-center p-5 space-y-4 shadow-lg rounded-xl w-full sm:w-[30rem] ">
             <div className="flex justify-center">
-              <img src="public/web.png" alt="web-icon" width={100} height={100} />
+              <img src="/web.png" alt="web-icon" width={100} height={100} />
             </div>
             <h1 className="text-2xl text-center">FrontEnd Development</h1>
             <p>
