@@ -13,8 +13,10 @@ const Projects = () => {
               alt="instagram-clone"
               className="w-full md:h-[14rem]"
             />
-            <hr/>
-            <div className="px-5 sm:pt-10 py-5">
+            <hr />
+            <div
+              className="px-5 sm:pt-8 py-5"
+            >
               <h1 className="text-xl font-semibold">InstaGram Clone</h1>
               <p className="text-sm sm:my-4 my-6">
                 The Instagram Clone is a full-stack web application developed to
@@ -42,7 +44,7 @@ const Projects = () => {
               alt="Homely Hub"
               className="w-full md:h-[14rem] "
             />
-            <div className="px-5 sm:pt-10 py-5">
+            <div className="px-5 sm:pt-8 py-5">
               <h1 className="text-xl font-semibold">HomelyHub</h1>
               <p className="text-sm sm:my-4 my-6">
                 Homely Hub is a comprehensive MERN (MongoDB, Express.js,

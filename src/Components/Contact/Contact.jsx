@@ -10,7 +10,7 @@ const Contact = () => {
     <Notconfirm />;
   }
   return (
-    <div className="md:pb-20 md:pt-28 py-10 h-full">
+    <div className="md:pb-20 md:pt-10 mt-20 h-full">
       <h1 className="text-3xl font-bold text-center">Contact Me</h1>
       <div className="flex justify-center mt-10 h-fit">
         <form

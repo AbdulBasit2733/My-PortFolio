@@ -5,28 +5,28 @@ const Navbar = () => {
     {
       id: 1,
       title: "Home",
-      link: "/My-PortFolio/",
+      link: "/",
     },
 
     {
       id: 2,
       title: "About",
-      link: "/My-PortFolio/about",
+      link: "/about",
     },
     {
       id: 3,
       title: "Services",
-      link: "/My-PortFolio/services",
+      link: "/services",
     },
     {
       id: 4,
       title: "Skills",
-      link: "/My-PortFolio/skills",
+      link: "/skills",
     },
     {
       id: 5,
       title: "Projects",
-      link: "/My-PortFolio/projects",
+      link: "/projects",
     },
     // {
     //   id: 1,
@@ -41,7 +41,7 @@ const Navbar = () => {
     {
       id: 6,
       title: "Contact",
-      link: "/My-PortFolio/contact",
+      link: "/contact",
     },
   ]);
   const [brand, setBrand] = useState("AK");
