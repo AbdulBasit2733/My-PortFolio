@@ -60,7 +60,7 @@ const Home = () => {
         <div className="w-full flex justify-center mt-4">
           {/* Image Section */}
           <img
-            src="public/3.jpg"
+            src="/3.jpg"
             alt="Profile"
             className="rounded-full shadow-xl w-2/3 sm:w-1/2 sm:h-fit md:w-4/5 lg:w-2/4"
           />

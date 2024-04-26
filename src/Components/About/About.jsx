@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   const [data, setData] = useState({
-    image: "public/2.jpg",
+    image: "/2.jpg",
     title: "FrontEnd Developer",
     desc1: `I am Abdul Basit Khan, a dedicated frontend developer based in Aurangabad, India. Currently pursuing my Bachelor of Technology (B.Tech) at MIT Aurangabad, I hold a strong academic record with a 7.23 CGPA. Prior to this, I completed my Diploma in Electrical Engineering from Government Polytechnic Aurangabad with an impressive 86.53%.`,
     desc2: `Driven by a passion for technology, I achieved notable success during my academic years, scoring 87.6% in the 10th Standard (SSC) examinations, including a remarkable 99 out of 100 in Mathematics.
