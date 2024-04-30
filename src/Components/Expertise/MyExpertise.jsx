@@ -1,9 +1,38 @@
 import { Link } from "react-router-dom";
 
 const MyExpertise = () => {
-  // const [skills,setSkills] = useState({
-
-  // })
+  const skills = [
+    {
+      name: "HTML",
+    },
+    {
+      name: "CSS",
+    },
+    {
+      name: "Javascript",
+    },
+    {
+      name: "Tailwind CSS",
+    },
+    {
+      name: "React Js",
+    },
+    {
+      name: "Redux Toolkit",
+    },
+    {
+      name: "VSCode",
+    },
+    {
+      name: "Git",
+    },
+    {
+      name: "Github",
+    },
+    {
+      name: "Microsoft Office",
+    },
+  ];
   return (
     <div className="bg-slate-100 md:h-[42.7rem] sm:h-full py-16 mt-10">
       <h1 className=" lg:pb-10 text-3xl font-bold text-center pt-5">
@@ -24,7 +53,7 @@ const MyExpertise = () => {
               Enthusiastic about state management with Redux Toolkit, and
               committed to efficient version control with Git and GitHub.
             </p>
-            <br/>
+            <br />
             {/* This Button Should Download The CV */}
             <Link
               href="https://drive.google.com/file/d/188-WB2dcYF2LiKuS7hBFPl9wGWGACbGB/view?usp=drive_link"
@@ -36,42 +65,14 @@ const MyExpertise = () => {
         </div>
         <div className="flex justify-center  items-center gap-4 flex-wrap h-fit px-10 py-20 mt-20 md:mt-0">
           {/* Skills Section */}
-          <p className="bg-slate-300 w-fit px-3 py-2 rounded-full hover:bg-orange-500 hover:text-white text-sm font-semibold cursor-pointer duration-500">
-            HTML
-          </p>
-          <p className="bg-slate-300 w-fit px-3 py-2 rounded-full hover:bg-orange-500 hover:text-white text-sm font-semibold cursor-pointer duration-500">
-            CSS
-          </p>
-          <p className="bg-slate-300 w-fit px-3 py-2 rounded-full hover:bg-orange-500 hover:text-white text-sm font-semibold cursor-pointer duration-500">
-            Tailwind CSS
-          </p>
-          <p className="bg-slate-300 w-fit px-3 py-2 rounded-full hover:bg-orange-500 hover:text-white text-sm font-semibold cursor-pointer duration-500">
-            JavaScript
-          </p>
-          <p className="bg-slate-300 w-fit px-3 py-2 rounded-full hover:bg-orange-500 hover:text-white text-sm font-semibold cursor-pointer duration-500">
-            React Js
-          </p>
-          <p className="bg-slate-300 w-fit px-3 py-2 rounded-full hover:bg-orange-500 hover:text-white text-sm font-semibold cursor-pointer duration-500">
-            Redux Toolkit
-          </p>
-          <p className="bg-slate-300 w-fit px-3 py-2 rounded-full hover:bg-orange-500 hover:text-white text-sm font-semibold cursor-pointer duration-500">
-            Python
-          </p>
-          <p className="bg-slate-300 w-fit px-3 py-2 rounded-full hover:bg-orange-500 hover:text-white text-sm font-semibold cursor-pointer duration-500">
-            SQL
-          </p>
-          <p className="bg-slate-300 w-fit px-3 py-2 rounded-full hover:bg-orange-500 hover:text-white text-sm font-semibold cursor-pointer duration-500">
-            VSCode
-          </p>
-          <p className="bg-slate-300 w-fit px-3 py-2 rounded-full hover:bg-orange-500 hover:text-white text-sm font-semibold cursor-pointer duration-500">
-            Git
-          </p>
-          <p className="bg-slate-300 w-fit px-3 py-2 rounded-full hover:bg-orange-500 hover:text-white text-sm font-semibold cursor-pointer duration-500">
-            GitHub
-          </p>
-          <p className="bg-slate-300 w-fit px-3 py-2 rounded-full hover:bg-orange-500 hover:text-white text-sm font-semibold cursor-pointer duration-500">
-            Microsoft Office
-          </p>
+          {skills.map((skill, id) => (
+            <p
+              key={id}
+              className="bg-slate-300 w-fit px-3 py-2 rounded-full hover:bg-orange-500 hover:text-white text-sm font-semibold cursor-pointer duration-500"
+            >
+              {skill.name}
+            </p>
+          ))}
         </div>
       </div>
     </div>

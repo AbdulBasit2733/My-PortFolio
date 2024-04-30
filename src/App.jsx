@@ -9,6 +9,7 @@ import Contact from "./Components/Contact/Contact";
 import { Confirmation, Notconfirm } from "./Components/Contact/Confirmation";
 import ReadMore from "./Components/About/ReadMore";
 import Projects from "./Components/Projects/Projects";
+import NotFound from "./Components/NotFound";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/contact/confirm" element={<Confirmation />} />
         <Route path="/contact/notconfirm" element={<Notconfirm />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
