@@ -28,7 +28,7 @@ const Home = () => {
             </div>
 
             <h1 className="text-5xl text-orange-500 mt-4 font-bold">
-              I Am Abdul Basit Khan
+              I'm Abdul Basit Khan
             </h1>
             <h2 className="text-3xl mt-4 font-semibold">
               Frontend Developer | React.js Enthusiast
