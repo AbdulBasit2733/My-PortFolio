@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import About from "./Components/About/About";
 import Home from "./Components/Home/Home";
 import Navbar from "./Components/Navbar/Navbar";
-import Services from "./Components/Services/Services";
 import MyExpertise from "./Components/Expertise/MyExpertise";
 import Footer from "./Components/Footer/Footer";
 import Contact from "./Components/Contact/Contact";
@@ -24,7 +23,7 @@ const App = () => {
               <Home />
               <About />
               <MyExpertise />
-              <Services />
+  
               <Projects />
               <Contact />
               <Footer />
@@ -35,7 +34,7 @@ const App = () => {
         <Route path="/about/readmore" element={<ReadMore />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/skills" element={<MyExpertise />} />
-        <Route path="/services" element={<Services />} />
+
         <Route path="/contact" element={<Contact />} />
         <Route path="/contact/confirm" element={<Confirmation />} />
         <Route path="/contact/notconfirm" element={<Notconfirm />} />

@@ -13,33 +13,20 @@ const Navbar = () => {
       title: "About",
       link: "/about",
     },
+
     {
       id: 3,
-      title: "Services",
-      link: "/services",
-    },
-    {
-      id: 4,
       title: "Skills",
       link: "/skills",
     },
     {
-      id: 5,
+      id: 4,
       title: "Projects",
       link: "/projects",
     },
-    // {
-    //   id: 1,
-    //   title: "Blogs",
-    //   link: "/blogs",
-    // },
-    // {
-    //   id: 1,
-    //   title: "Education",
-    //   link: "/education",
-    // },
+
     {
-      id: 6,
+      id: 5,
       title: "Contact",
       link: "/contact",
     },

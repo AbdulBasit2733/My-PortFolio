@@ -21,7 +21,7 @@ const Home = () => {
     <>
       <div className="main-container md:flex mt-32">
         <div className="w-full flex items-center justify-center">
-          <div className="md:w-2/3 ms-11">
+          <div className="lg:w-2/4 md:w-2/3 ms-11">
             <div className="flex">
               <h3 className="text-xl font-semibold uppercase">hello !</h3>
               <img src="/wave.gif" className="text-orange-500" width={30} />
@@ -65,7 +65,7 @@ const Home = () => {
           <img
             src="/3.jpg"
             alt="Profile"
-            className="rounded-full shadow-xl w-2/3 sm:w-1/2 sm:h-fit md:w-4/5 lg:w-2/4"
+            className="rounded-full shadow-xl w-2/3 sm:w-1/2 sm:h-fit md:w-4/5 lg:w-2/5"
           />
         </div>
       </div>

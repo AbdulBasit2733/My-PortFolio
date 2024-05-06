@@ -22,13 +22,13 @@ const About = () => {
         <div className=" w-full flex justify-center">
           <img
             src={data.image}
-            className="rounded-full border mb-3 w-2/3 sm:w-1/2 sm:h-fit md:w-2/3 lg:w-2/4"
+            className="rounded-full border mb-3 w-2/3 sm:w-1/2 sm:h-fit md:w-2/3 lg:w-2/5"
             alt="about-image"
           />
         </div>
 
         {/* Text */}
-        <div className="w-full sm:flex md:justify-start flex justify-center md:px-4 sm: px-10">
+        <div className="w-full sm:flex md:justify-start flex justify-center md:px-4 sm:px-10">
           <div className="space-y-5 w-[25rem] sm:w-full text-center md:text-left md:px-10">
             <h1 className="text-3xl font-bold capitalize">{data.title}</h1>
             <p className="line-clamp-3">{data.desc1}</p>
