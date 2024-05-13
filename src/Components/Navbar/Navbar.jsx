@@ -31,18 +31,24 @@ const Navbar = () => {
       link: "/contact",
     },
   ]);
-  const [brand, setBrand] = useState("AK");
   const [isOpen, setIsOpen] = useState(false);
-  // const navigate = useNavigate();
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
   return (
     <div className="header fixed top-0 shadow-lg h-16 bg-white flex justify-between items-center w-full md:px-10">
-      <h1 className="text-2xl font-bold px-10 md:px-0">{brand}</h1>
+      <Link to={"/"} className="text-2xl font-bold px-10 md:px-0">
+        Ak
+      </Link>
       {isOpen && (
-        <div className="text-2xl bg-white absolute top-[4rem] w-full flex flex-col items-center space-y-10 py-10 h-fit sm:hidden  transition-all ease-in duration-200">
+        <div
+          className={`text-2xl bg-white absolute top-[4rem] w-full flex flex-col items-center space-y-10 py-10 h-fit sm:hidden ${
+            isOpen
+              ? "transition-all ease-in-out duration-700 translate-y-8"
+              : "translate-y-0"
+          }`}
+        >
           {menuLinks.map((link) => (
             <Link
               key={link.id}
@@ -67,7 +73,7 @@ const Navbar = () => {
       </div>
       <div className="hidden md:block">
         <a
-          href="https://drive.google.com/file/d/188-WB2dcYF2LiKuS7hBFPl9wGWGACbGB/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1laNki2liSA1K4oQh01ziKWsafCOP7Md-/view?usp=drive_link"
           className="bg-orange-500 text-white rounded-xl px-3 py-2 font-semibold hover:bg-white shadow-lg hover:text-black duration-500 transition-all ease-in"
           target="_blank"
           rel="noopener noreferrer"

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 const Home = () => {
   const links = [
@@ -19,9 +20,9 @@ const Home = () => {
 
   return (
     <>
-      <div className="main-container md:flex mt-32">
-        <div className="w-full flex items-center justify-center">
-          <div className="lg:w-2/4 md:w-2/3 ms-11">
+      <div className="main-container md:flex my-32">
+        <div className="lg:w-[60%] flex items-center justify-center">
+          <div className="lg:w-[25rem] md:w-2/3 ms-11">
             <div className="flex">
               <h3 className="text-xl font-semibold uppercase">hello !</h3>
               <img src="/wave.gif" className="text-orange-500" width={30} />
@@ -61,13 +62,13 @@ const Home = () => {
           </div>
         </div>
         {/* Image Section */}
-        <div className="w-full flex justify-center mt-4">
+        <aside className="lg:w-[40%] mt-5 flex justify-center items-center px-10">
           <img
             src="/3.jpg"
             alt="Profile"
-            className="rounded-full shadow-xl w-2/3 sm:w-1/2 sm:h-fit md:w-4/5 lg:w-2/5"
+            className="rounded-full shadow-xl w-full sm:w-[20rem]  md:w-[30rem]"
           />
-        </div>
+        </aside>
       </div>
     </>
   );

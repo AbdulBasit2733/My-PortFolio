@@ -17,13 +17,13 @@ const Footer = () => {
         </div>
         <div className="flex md:space-x-5 space-x-2">
           <Link
-            to="/My-PortFolio/about"
+            to="/about"
             className="font-semibold hover:text-orange-500 hover:underline"
           >
             About
           </Link>
           <Link
-            to="/My-PortFolio/contact"
+            to="/contact"
             className="font-semibold hover:text-orange-500 hover:underline"
           >
             Contact

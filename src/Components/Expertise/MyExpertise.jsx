@@ -34,8 +34,8 @@ const MyExpertise = () => {
     },
   ];
   return (
-    <div className="bg-slate-100 md:h-[42.7rem] sm:h-full py-16 mt-10">
-      <h1 className=" lg:pb-10 text-3xl font-bold text-center pt-5">
+    <div className="bg-slate-100 md:h-[91vh] sm:h-full pt-20">
+      <h1 className="text-3xl font-bold text-center">
         My Skills
       </h1>
       <div className="box-container md:flex md:justify-center items-center md:items-center lg:py-12 py-10">

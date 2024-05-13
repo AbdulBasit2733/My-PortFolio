@@ -1,46 +1,15 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "./Components/About/About";
-import Home from "./Components/Home/Home";
+import { Outlet } from "react-router-dom";
+
 import Navbar from "./Components/Navbar/Navbar";
-import MyExpertise from "./Components/Expertise/MyExpertise";
 import Footer from "./Components/Footer/Footer";
-import Contact from "./Components/Contact/Contact";
-import { Confirmation, Notconfirm } from "./Components/Contact/Confirmation";
-import ReadMore from "./Components/About/ReadMore";
-import Projects from "./Components/Projects/Projects";
-import NotFound from "./Components/NotFound";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
-      <Routes>
-        <Route
-          exact
-          path="/"
-          element={
-            <>
-              <Home />
-              <About />
-              <MyExpertise />
-  
-              <Projects />
-              <Contact />
-              <Footer />
-            </>
-          }
-        />
-        <Route path="/about" element={<About />} />
-        <Route path="/about/readmore" element={<ReadMore />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/skills" element={<MyExpertise />} />
-
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/contact/confirm" element={<Confirmation />} />
-        <Route path="/contact/notconfirm" element={<Notconfirm />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
+      <Outlet />
+      <Footer />
+    </>
   );
 };
 

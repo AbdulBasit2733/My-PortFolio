@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
-    <div className="pt-24">
+    <div className="pt-20 h-[91vh]">
       <h1 className="text-3xl md:text-4xl font-bold text-center">Projects</h1>
       <div className="my-10 md:flex md:flex-row md:space-y-0 md:space-x-10 flex-col justify-center space-y-20 items-center px-10">
         <div className="shadow-xl w-[20rem] text-justify rounded-lg">

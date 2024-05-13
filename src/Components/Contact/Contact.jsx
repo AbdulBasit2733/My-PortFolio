@@ -10,9 +10,9 @@ const Contact = () => {
     <Notconfirm />;
   }
   return (
-    <div className="md:pb-20 md:pt-10 mt-20 h-full">
+    <div className="pt-20 h-[91vh]">
       <h1 className="text-3xl font-bold text-center">Contact Me</h1>
-      <div className="flex justify-center mt-10 h-fit">
+      <div className="flex justify-center mt-5 h-fit">
         <form
           className="flex-col flex-wrap shadow-xl rounded-md space-y-6 p-10 h-[28rem] bg-slate-50"
           action="https://formspree.io/f/mkndqqor"
