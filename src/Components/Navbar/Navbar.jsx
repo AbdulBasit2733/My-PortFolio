@@ -43,7 +43,7 @@ const Navbar = () => {
       </Link>
       {isOpen && (
         <div
-          className={`text-2xl bg-white absolute top-[4rem] w-full flex flex-col items-center space-y-10 py-10 h-fit sm:hidden ${
+          className={`text-2xl bg-white absolute top-[2rem] w-full flex flex-col items-center space-y-10 py-10 h-[30rem] sm:hidden ${
             isOpen
               ? "transition-all ease-in-out duration-700 translate-y-8"
               : "translate-y-0"
@@ -54,6 +54,7 @@ const Navbar = () => {
               key={link.id}
               to={link.link}
               className="font-semibold hover:text-orange-500"
+              onClick={isOpen}
             >
               {link.title}
             </Link>
