@@ -6,7 +6,7 @@ const Footer = () => {
       <div className=" py-5 bg-gray-100 flex justify-between items-center sm:px-20 md:px-10 lg:px-44 px-8 text-sm">
         <div>
           <p className="flex space-x-5 items-center">
-            <p className="font-bold text-orange-500">
+            <p id="footer" className="font-bold text-orange-500">
               <span>©</span>
               2024
               <span className="md:ml-2 ml-1">Abdul Basit Khan </span>
@@ -17,12 +17,14 @@ const Footer = () => {
         </div>
         <div className="flex md:space-x-5 space-x-2">
           <Link
+            id="nav-links"
             to="/about"
             className="font-semibold hover:text-orange-500 hover:underline"
           >
             About
           </Link>
           <Link
+            id="nav-links"
             to="/contact"
             className="font-semibold hover:text-orange-500 hover:underline"
           >

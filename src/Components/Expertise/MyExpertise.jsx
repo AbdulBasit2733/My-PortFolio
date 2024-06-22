@@ -34,7 +34,7 @@ const MyExpertise = () => {
     },
   ];
   return (
-    <div className="bg-slate-100 md:h-[91vh] sm:h-full pt-20">
+    <div className="md:h-[91vh] sm:h-full mt-36">
       <h1 className="text-3xl font-bold text-center">
         My Skills
       </h1>

@@ -8,9 +8,8 @@ import About from "./Components/About/About.jsx";
 import ReadMore from "./Components/About/ReadMore.jsx";
 import Projects from "./Components/Projects/Projects.jsx";
 import MyExpertise from "./Components/Expertise/MyExpertise.jsx";
-import Contact from "./Components/Contact/Contact.jsx";
-import { Confirmation } from "./Components/Contact/Confirmation.jsx";
 import NotFound from "./Components/NotFound.jsx";
+import Experience from "./Components/Experience/Experience.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,11 +27,7 @@ const router = createBrowserRouter([
       },
       { path: "/projects", element: <Projects /> },
       { path: "/skills", element: <MyExpertise /> },
-      {
-        path: "/contact",
-        element: <Contact />,
-        children: [{ path: "/contact/confirm", element: <Confirmation /> }],
-      },
+      { path: "/experience", element: <Experience /> },
     ],
   },
   {

@@ -15,7 +15,7 @@ const About = () => {
     },
   });
   return (
-    <div className="about-section pt-20 pb-10">
+    <div className="about-section mt-28 pb-10">
       <h1 className="text-center pb-16 text-4xl font-bold">About Me</h1>
       <div className="md:flex items-center justify-center">
         {/* Image */}
@@ -35,12 +35,12 @@ const About = () => {
             <p className="line-clamp-3">{data.desc1}</p>
             <p className="line-clamp-3">{data.desc2}</p>
             <br />
-            <Link
+            {/* <Link
               to={data.actionButton.link}
               className="text-white px-3 py-2 mt-5 rounded-xl shadow-xl bg-orange-500 font-semibold hover:bg-white duration-500 transition-all ease-in hover:text-black"
             >
               {data.actionButton.title}
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

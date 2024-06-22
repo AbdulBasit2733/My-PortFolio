@@ -4,16 +4,14 @@ const Navbar = () => {
   const [menuLinks, setMenuLinks] = useState([
     {
       id: 1,
-      title: "Home",
-      link: "/",
+      title: "Experience",
+      link: "/experience",
     },
-
     {
       id: 2,
-      title: "About",
-      link: "/about",
+      title: "Projects",
+      link: "/projects",
     },
-
     {
       id: 3,
       title: "Skills",
@@ -21,14 +19,8 @@ const Navbar = () => {
     },
     {
       id: 4,
-      title: "Projects",
-      link: "/projects",
-    },
-
-    {
-      id: 5,
-      title: "Contact",
-      link: "/contact",
+      title: "About",
+      link: "/about",
     },
   ]);
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +30,11 @@ const Navbar = () => {
   };
   return (
     <div className="header fixed top-0 shadow-lg h-16 bg-white flex justify-between items-center w-full md:px-10">
-      <Link to={"/"} className="text-2xl font-bold px-10 md:px-0">
+      <Link
+        to={"/"}
+        id="nav-links"
+        className="text-2xl font-bold px-10 md:px-0"
+      >
         Ak
       </Link>
       {isOpen && (
@@ -51,21 +47,24 @@ const Navbar = () => {
         >
           {menuLinks.map((link) => (
             <Link
+              id="nav-links"
               key={link.id}
               to={link.link}
               className="font-semibold hover:text-orange-500"
-              onClick={isOpen}
+              onClick={toggleNavbar}
             >
               {link.title}
             </Link>
           ))}
         </div>
       )}
-      <div className="text-sm top-[4rem] items-center space-x-5 hidden md:block px-10">
+      <div className="text-lg top-[4rem] items-center space-x-5 hidden md:block px-10">
         {menuLinks.map((link) => (
           <Link
+            id="nav-links"
             key={link.id}
             to={link.link}
+            onClick={toggleNavbar}
             className="font-semibold hover:text-orange-500"
           >
             {link.title}
@@ -73,14 +72,15 @@ const Navbar = () => {
         ))}
       </div>
       <div className="hidden md:block">
-        <a
-          href="https://drive.google.com/file/d/1laNki2liSA1K4oQh01ziKWsafCOP7Md-/view?usp=drive_link"
+        <Link
+          id="nav-links"
+          to="https://drive.google.com/file/d/1GIVgHFIaannmVA6WFwroRoghb3mKMq0o/view?usp=sharing"
           className="bg-orange-500 text-white rounded-xl px-3 py-2 font-semibold hover:bg-white shadow-lg hover:text-black duration-500 transition-all ease-in"
           target="_blank"
           rel="noopener noreferrer"
         >
           Hire Me
-        </a>
+        </Link>
       </div>
       <div className="px-10 md:hidden">
         <i className="bx bx-menu bx-md" onClick={toggleNavbar}></i>
