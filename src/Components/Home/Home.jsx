@@ -26,14 +26,14 @@ const Home = () => {
           <img src="/wave.gif" className="text-orange-500" width={30} />
         </div>
         <div className="flex flex-col justify-evenly">
-          <h1 className="text-6xl mb-5 font-semibold sm:w-[40rem]">
+          <h1 className="md:text-6xl text-4xl mb-5 font-semibold sm:w-[40rem]">
             My Name Is{" "}
             <span className="text-orange-500 font-bold">Abdul Basit Khan</span>
           </h1>
-          <h3 className="text-3xl font-semibold mb-10">
+          <h3 className="md:text-3xl text-xl font-semibold md:mb-10 mb-6 ">
             Frontend Developer | React.js Enthusiast
           </h3>
-          <p className="text-xl text-justify">
+          <p className="text-lg text-left">
             Welcome to my portfolio! I am a dedicated frontend developer with a
             passion for creating engaging and responsive web applications. With
             a strong foundation in technologies like React.js, HTML, CSS,and
@@ -54,7 +54,7 @@ const Home = () => {
       <img
         src="./3.jpg"
         alt=""
-        className="sm:w-[28rem] min-w-[20rem] w-[25rem] rounded-full transition-all ease-in-out duration-500 md:hover:scale-105"
+        className="sm:w-[28rem] min-w-[20rem] w-[25rem] md:rounded-full rounded-md transition-all ease-in-out duration-500 md:hover:scale-105"
       />
     </section>
   );

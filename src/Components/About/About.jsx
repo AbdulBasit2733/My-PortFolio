@@ -22,7 +22,7 @@ const About = () => {
         <div className="lg:w-[30vw] flex justify-center">
           <img
             src={data.image}
-            className="rounded-full mb-3 w-[400px] sm:w-[300px] md:w-full
+            className="md:rounded-full rounded-md mb-3 w-[400px] sm:w-[300px] md:w-full
             "
             alt="about-image"
           />
@@ -32,8 +32,8 @@ const About = () => {
         <div className="lg:w-[50vw] sm:flex md:justify-start flex justify-center md:px-4 sm:px-10">
           <div className="space-y-5 w-[25rem] sm:w-full text-center md:text-left md:px-10">
             <h1 className="text-3xl font-bold capitalize">{data.title}</h1>
-            <p className="line-clamp-3">{data.desc1}</p>
-            <p className="line-clamp-3">{data.desc2}</p>
+            <p>{data.desc1}</p>
+            <p>{data.desc2}</p>
             <br />
             {/* <Link
               to={data.actionButton.link}
