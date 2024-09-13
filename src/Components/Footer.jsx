@@ -1,20 +1,19 @@
 import { Link } from "react-scroll";
 const Footer = () => {
   return (
-    <div className="h-20 bottom-0">
-      <div className="py-5 flex justify-between items-center sm:px-20 md:px-10 lg:px-44 px-8 text-sm">
-        <div>
-          <p className="flex space-x-5 items-center">
-            <p id="footer" className="font-bold text-orange-500">
-              <span>©</span>
-              2024
-              <span className="md:ml-2 ml-1">Abdul Basit Khan </span>
-            </p>
-
-            <span className="font-semibold">All Rights Reserved</span>
+    <div className="sm:h-20 h-36 bottom-0">
+      <div className="py-5 flex justify-between items-center sm:px-20 md:px-10 lg:px-44 px-3 text-sm">
+        <p className="flex sm:space-x-5 gap-x-3 items-center">
+          <p id="footer" className="font-bold text-orange-500">
+            <span>©</span>
+            2024
+            <span className="md:ml-2 ml-1">Abdul Basit Khan </span>
           </p>
-        </div>
-        <div className="flex items-center md:space-x-5 space-x-2">
+
+          <span className="font-semibold">All Rights Reserved</span>
+        </p>
+
+        <div className="flex flex-col sm:flex-row items-center sm:space-x-5 sm:space-y-0 space-y-2">
           <Link
             to="skills"
             spy={true}
