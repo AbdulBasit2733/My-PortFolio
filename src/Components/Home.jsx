@@ -30,8 +30,8 @@ const Home = () => {
       name: "sprhava",
       image: "./sprhava.png",
       link: "https://www.sprhava.com/",
-      animation:'fade-up-left',
-      delay:'800',
+      animation: "fade-up-left",
+      delay: "800",
       skills: [
         "bx bxl-react bx-border-circle ",
         "bx bxl-html5 bx-border-circle ",
@@ -43,8 +43,8 @@ const Home = () => {
       id: 2,
       name: "Instagram Clone",
       image: "/instagram.png",
-      animation:'fade-up-left',
-      delay:'1200',
+      animation: "fade-up-left",
+      delay: "1200",
       link: "https://insta-clone-abdulbasit.vercel.app/",
       skills: [
         "bx bxl-react bx-border-circle ",
@@ -58,8 +58,8 @@ const Home = () => {
       name: "HomelyHub",
       image: "./homelyhub.png",
       link: "https://youtu.be/iXNaXGNeZ6c?si=6LzcT_ekosS3KZ8H",
-      animation:'fade-up-left',
-      delay:'1600',
+      animation: "fade-up-left",
+      delay: "1600",
       skills: [
         "bx bxl-react bx-border-circle ",
         "bx bxl-html5 bx-border-circle ",
@@ -291,9 +291,16 @@ const Home = () => {
           <div
             data-aos="zoom-in"
             data-aos-delay="1000"
-            className="text-6xl font-bold"
+            className="text-6xl font-bold hidden sm:block"
           >
             {"<<"}
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+            className="text-6xl font-bold block sm:hidden"
+          >
+            {"⇑"}
           </div>
           <div
             data-aos="fade-right"
@@ -315,9 +322,16 @@ const Home = () => {
           <div
             data-aos="zoom-in"
             data-aos-delay="1800"
-            className="text-6xl font-bold"
+            className="text-6xl font-bold sm:block hidden"
           >
             {"<<"}
+          </div>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="1000"
+            className="text-6xl font-bold block sm:hidden"
+          >
+            {"⇑"}
           </div>
           <div
             data-aos="fade-right"
@@ -337,7 +351,10 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id={"projects"} className="w-2/3 mx-auto md:h-[80vh] md:mt-0 mt-28">
+      <section
+        id={"projects"}
+        className="w-2/3 mx-auto md:h-[80vh] md:mt-0 mt-28"
+      >
         <h1
           data-aos="slide-right"
           className="text-3xl md:text-4xl font-bold text-center mb-10"
