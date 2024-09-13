@@ -266,7 +266,7 @@ const Home = () => {
         </div>
       </section>
       <section
-        className="sm:w-2/3 md:h-[80vh] mx-auto rounded-md sm:px-10 px-2"
+        className="sm:w-2/3 md:h-[80vh] mx-auto rounded-md sm:px-10 px-2 md:mt-0 mt-28"
         id="experience"
       >
         <h1
@@ -277,7 +277,7 @@ const Home = () => {
         </h1>
         <div className=" flex flex-col sm:flex-row justify-center items-center gap-10 text-center font-semibold">
           <div
-            data-aos="fade-down"
+            data-aos="fade-right"
             data-aos-delay="800"
             id="1"
             className="py-3 px-5 space-y-5 border-[3px] border-orange-500 w-[20rem]"
@@ -289,14 +289,14 @@ const Home = () => {
             </p>
           </div>
           <div
-            data-aos="zoom-oin"
+            data-aos="zoom-in"
             data-aos-delay="1000"
             className="text-6xl font-bold"
           >
             {"<<"}
           </div>
           <div
-            data-aos="fade-down"
+            data-aos="fade-right"
             data-aos-delay="1500"
             id="2"
             className="py-3 px-5 space-y-5 border-[3px] border-orange-500 w-[20rem] h-[15rem]"
@@ -320,7 +320,7 @@ const Home = () => {
             {"<<"}
           </div>
           <div
-            data-aos="fade-down"
+            data-aos="fade-right"
             data-aos-delay="2200"
             id="3"
             className="py-3 px-5 space-y-5 border-[3px] border-orange-500 w-[20rem]"
@@ -337,10 +337,10 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id={"projects"} className="w-2/3 mx-auto md:h-[80vh] md:mt-0">
+      <section id={"projects"} className="w-2/3 mx-auto md:h-[80vh] md:mt-0 mt-28">
         <h1
           data-aos="slide-right"
-          className="text-3xl md:text-4xl font-bold text-center mb-20"
+          className="text-3xl md:text-4xl font-bold text-center mb-10"
         >
           Projects
         </h1>
