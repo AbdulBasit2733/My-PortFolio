@@ -15,23 +15,23 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed bg-white shadow-sm border-b top-0 h-16 flex justify-between items-center w-full md:px-10">
+    <div className="flex fixed shadow-sm w-full sm:justify-start justify-between bg-white items-center py-2 sm:px-10 sm:py-5">
       <Link
         to="home"
         spy={true}
         smooth={true}
         offset={-150}
         duration={1000}
-        className="text-2xl font-bold px-10 md:px-0 cursor-pointer"
+        className="text-3xl font-extrabold tracking-wider px-10 md:px-0 cursor-pointer"
       >
         Ak
       </Link>
       {isOpen && (
         <div
-          className={`text-2xl bg-white absolute top-[2rem] w-full flex flex-col items-center space-y-10 py-10 h-[30rem] sm:hidden ${
+          className={`text-2xl bg-white absolute w-[20rem] left-5 top-[5rem] mx-auto flex flex-col justify-center items-center h-[20rem] gap-y-10 transition-all ease-in-out duration-1000 transform md:hidden ${
             isOpen
-              ? "transition-all ease-in-out duration-700 translate-y-8"
-              : "translate-y-0"
+              ? "translate-x-0 opacity-100" // Visible state
+              : "-translate-x-[200%] opacity-0" // Hidden state with slide up
           }`}
         >
           {menuLinks.map((link) => (
@@ -51,7 +51,7 @@ const Navbar = () => {
           ))}
         </div>
       )}
-      <div className="text-lg top-[4rem] items-center space-x-5 hidden md:block px-5">
+      <div className="text-lg top-[4rem] items-center hidden md:block">
         {menuLinks.map((link) => (
           <Link
             id="nav-links"
@@ -61,12 +61,13 @@ const Navbar = () => {
             smooth={true}
             offset={-100}
             duration={1000}
-            className="font-semibold hover:text-orange-500 cursor-pointer">
+            className="font-semibold hover:text-orange-500 text-sm transition-all duration-500 ease-in-out cursor-pointer"
+          >
             {link.title}
           </Link>
         ))}
       </div>
-      <div className="px-10 md:hidden">
+      <div className="mr-24 md:hidden">
         <i className="bx bx-menu bx-md" onClick={toggleNavbar}></i>
       </div>
     </div>

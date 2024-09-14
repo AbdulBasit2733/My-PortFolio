@@ -104,10 +104,10 @@ const Home = () => {
     <section id="main" className="min-h-screen">
       <section
         id="home"
-        className="sm:flex md:flex-row flex flex-col justify-center items-center h-screen md:px-20"
+        className="sm:flex md:flex-row flex flex-col justify-center items-center h-screen md:px-20 px-5 overflow-x-hidden"
       >
         <div className="md:w-6/12 sm:p-20 p-10">
-          <div className=" flex justify-start items-center mb-5">
+          <div className="flex justify-start items-center mb-5">
             <h3
               data-aos="fade-right"
               className="text-3xl mr-2 font-bold text-orange-500"
@@ -120,7 +120,7 @@ const Home = () => {
             <h1
               data-aos="fade-right"
               data-aos-delay="1200"
-              className="md:text-6xl text-4xl mb-5 font-semibold sm:w-[40rem]"
+              className="md:text-5xl text-4xl mb-5 font-semibold sm:w-full"
             >
               My Name Is{" "}
               <span className="text-orange-500 font-bold">
@@ -130,7 +130,7 @@ const Home = () => {
             <h3
               data-aos="fade-right"
               data-aos-delay="1500"
-              className="md:text-3xl text-xl font-semibold md:mb-10 mb-5 "
+              className="md:text-3xl text-xl font-semibold md:mb-8 mb-5"
             >
               Frontend Developer | React.js Enthusiast
             </h3>
@@ -143,16 +143,17 @@ const Home = () => {
               web apps using React, HTML, CSS, and JavaScript for impactful user
               experiences.
             </p>
-            <div className="flex justify-start gap-10 items-center text-orange-500 sm:mt-5 mt-3">
+            <div className="flex justify-start gap-10 items-center text-orange-500 mt-3">
               {links.map((link, id) => (
                 <Link
                   data-aos="fade-up"
                   data-aos-delay="1700"
                   to={link.link}
                   key={id}
+                  className=""
                 >
                   <i
-                    className={`bx bx-sm bx-border-circle ${link.icon} bg-white hover:bg-orange-500 hover:text-white transition-all ease-in-out duration-400`}
+                    className={`bx bx-sm bx-border-circle ${link.icon} bg-white transition-all ease-in-out duration-500 hover:bg-orange-500 hover:text-white`}
                   ></i>
                 </Link>
               ))}
@@ -161,133 +162,134 @@ const Home = () => {
         </div>
       </section>
       <section
-        className="sm:w-2/3 md:h-[80vh] mx-auto rounded-md sm:px-10 px-2"
+        className="sm:w-2/3 md:h-[80vh] mx-auto rounded-md sm:px-10 px-4 py-12"
         id="skills"
       >
         <h1
           data-aos="fade-down"
-          className="text-center text-4xl font-bold mt-5 mb-20"
+          className="text-center text-3xl md:text-4xl font-bold mt-5 mb-16"
         >
           SKILLS
         </h1>
         <div
           data-aos="fade-up"
           data-aos-delay="800"
-          className="flex flex-wrap justify-center gap-x-20 gap-y-10 items-center border-[3px] border-[#F97316] sm:px-20 px-10 py-10"
+          className="flex flex-wrap justify-center gap-x-10 gap-y-10 items-center border-3 border-[#F97316] sm:px-10 px-4 py-10"
         >
-          <div
-            data-aos="fade-right"
-            data-aos-delay="1000"
-            className=" flex justify-center gap-2 items-center  font-bold rounded-full"
-          >
-            <img src={React} alt="react" className="w-20" />
-            React Js
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-delay="1200"
-            className=" flex justify-center gap-2 items-center  font-bold rounded-full"
-          >
-            <img src={redux} alt="redux" className="w-10" />
-            Redux js
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-delay="1300"
-            className=" flex justify-center gap-2 items-center  font-bold rounded-full"
-          >
-            <img src={HTML} alt="html" className="w-10" />
-            HTML
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-delay="1400"
-            className=" flex justify-center gap-2 items-center  font-bold rounded-full"
-          >
-            <img src={css} alt="css" className="w-10" />
-            CSS
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-delay="1500"
-            className=" flex justify-center gap-2 items-center  font-bold rounded-full"
-          >
-            <img src={Tailwind} alt="tailwind" className="w-10" />
-            Tailwind css
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-delay="1600"
-            className=" flex justify-center gap-2 items-center  font-bold rounded-full"
-          >
-            <img src={javascript} alt="js" className="w-10" />
-            JavaScript
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-delay="1700"
-            className=" flex justify-center gap-2 items-center  font-bold rounded-full"
-          >
-            <img src={express} alt="express" className="w-10" />
-            Express
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-delay="1800"
-            className=" flex justify-center gap-2 items-center  font-bold rounded-full"
-          >
-            <img src={node} alt="node js" className="w-10" />
-            Node Js
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-delay="1900"
-            className=" flex justify-center gap-2 items-center  font-bold rounded-full"
-          >
-            <img src={mongoDB} alt="mongodb" className="w-10" />
-            MongoDB
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-delay="2000"
-            className=" flex justify-center gap-2 items-center font-bold rounded-full"
-          >
-            <img src={python} alt="redux" className="w-10" />
-            Pyhton
-          </div>
-          <div
-            data-aos="fade-right"
-            data-aos-delay="2100"
-            className=" flex justify-center gap-2 items-center  font-bold rounded-full"
-          >
-            <img src={java} alt="redux" className="w-10" />
-            Java
-          </div>
+          {[
+            {
+              src: React,
+              alt: "react",
+              label: "React Js",
+              delay: 1000,
+              size: "w-20",
+            },
+            {
+              src: redux,
+              alt: "redux",
+              label: "Redux js",
+              delay: 1200,
+              size: "w-10",
+            },
+            {
+              src: HTML,
+              alt: "html",
+              label: "HTML",
+              delay: 1300,
+              size: "w-10",
+            },
+            { src: css, alt: "css", label: "CSS", delay: 1400, size: "w-10" },
+            {
+              src: Tailwind,
+              alt: "tailwind",
+              label: "Tailwind CSS",
+              delay: 1500,
+              size: "w-10",
+            },
+            {
+              src: javascript,
+              alt: "js",
+              label: "JavaScript",
+              delay: 1600,
+              size: "w-10",
+            },
+            {
+              src: express,
+              alt: "express",
+              label: "Express",
+              delay: 1700,
+              size: "w-10",
+            },
+            {
+              src: node,
+              alt: "node js",
+              label: "Node Js",
+              delay: 1800,
+              size: "w-10",
+            },
+            {
+              src: mongoDB,
+              alt: "mongodb",
+              label: "MongoDB",
+              delay: 1900,
+              size: "w-10",
+            },
+            {
+              src: python,
+              alt: "python",
+              label: "Python",
+              delay: 2000,
+              size: "w-10",
+            },
+            {
+              src: java,
+              alt: "java",
+              label: "Java",
+              delay: 2100,
+              size: "w-10",
+            },
+          ].map((skill, index) => (
+            <div
+              key={index}
+              data-aos="fade-right"
+              data-aos-delay={skill.delay}
+              className="flex justify-center gap-2 items-center font-bold rounded-full text-center"
+            >
+              <img src={skill.src} alt={skill.alt} className={skill.size} />
+              {skill.label}
+            </div>
+          ))}
         </div>
       </section>
+
       <section
-        className="sm:w-2/3 md:h-[80vh] mx-auto rounded-md sm:px-10 px-2 md:mt-0 mt-28"
+        className="max-w-5xl mx-auto sm:px-10 px-4 py-12 rounded-md md:mt-0 mt-28"
         id="experience"
       >
         <h1
           data-aos="fade-right"
-          className="text-center mb-28 sm:text-4xl text-3xl font-bold"
+          className="text-center mb-12 sm:text-4xl text-3xl font-bold"
         >
           Experience
         </h1>
-        <div className=" flex flex-col sm:flex-row justify-center items-center gap-10 text-center font-semibold">
+        <div className="flex flex-col sm:flex-row justify-center items-center sm:gap-10 gap-6 text-center font-semibold">
           <div
             data-aos="fade-right"
             data-aos-delay="800"
             id="1"
-            className="py-3 px-5 space-y-5 border-[3px] border-orange-500 w-[20rem]"
+            className="py-6 px-5 space-y-4 border-[3px] border-orange-500 w-full sm:w-[20rem] rounded-lg"
           >
-            <img className="mx-auto border-b" src={itux} alt="itux solutions" />
+            <img
+              className="mx-auto w-32 h-32 object-contain border-b pb-3"
+              src={itux}
+              alt="itux solutions"
+            />
             <h1>Full Stack Developer Trainee</h1>
             <p className="text-sm">
               July 2024 to -- <span className="text-orange-500">Present</span>
             </p>
           </div>
+
           <div
             data-aos="zoom-in"
             data-aos-delay="1000"
@@ -298,93 +300,97 @@ const Home = () => {
           <div
             data-aos="zoom-in"
             data-aos-delay="1000"
-            className="text-6xl font-bold block sm:hidden"
+            className="text-4xl font-bold block sm:hidden"
           >
             {"⇑"}
           </div>
+
           <div
             data-aos="fade-right"
             data-aos-delay="1500"
             id="2"
-            className="py-3 px-5 space-y-5 border-[3px] border-orange-500 w-[20rem] h-[15rem]"
+            className="py-6 px-5 space-y-4 border-[3px] border-orange-500 w-full sm:w-[20rem] h-auto rounded-lg"
           >
             <img
-              className="mx-auto border-b"
+              className="mx-auto w-32 h-32 object-contain border-b pb-3"
               src={zummit}
               alt="Zummit infolabs"
             />
-            <h1>Junior Web Devloper Intern</h1>
+            <h1>Junior Web Developer Intern</h1>
             <p className="text-sm">
               May to Sep 2024 --{" "}
               <span className="text-orange-500">Present</span>
             </p>
           </div>
+
           <div
             data-aos="zoom-in"
             data-aos-delay="1800"
-            className="text-6xl font-bold sm:block hidden"
+            className="text-6xl font-bold hidden sm:block"
           >
             {"<<"}
           </div>
           <div
             data-aos="zoom-in"
             data-aos-delay="1000"
-            className="text-6xl font-bold block sm:hidden"
+            className="text-4xl font-bold block sm:hidden"
           >
             {"⇑"}
           </div>
+
           <div
             data-aos="fade-right"
             data-aos-delay="2200"
             id="3"
-            className="py-3 px-5 space-y-5 border-[3px] border-orange-500 w-[20rem]"
+            className="py-6 px-5 space-y-4 border-[3px] border-orange-500 w-full sm:w-[20rem] rounded-lg"
           >
             <img
-              className=" mx-auto border-b"
+              className="mx-auto w-32 h-32 object-contain border-b pb-3"
               src={itux}
               alt="itux solutions"
             />
-            <h1>FrontEnd Devloper Intern</h1>
+            <h1>FrontEnd Developer Intern</h1>
             <p className="text-sm">
               Jan to Apr 2024 <span className="text-orange-500">Completed</span>
             </p>
           </div>
         </div>
       </section>
+
       <section
-        id={"projects"}
-        className="sm:w-2/3 mx-auto md:h-[80vh] md:mt-0 mt-28"
+        id="projects"
+        className="max-w-5xl min-h-screen mx-auto md:h-[80vh] py-12 md:mb-28 mt-28"
       >
         <h1
           data-aos="slide-right"
-          className="text-3xl md:text-4xl font-bold text-center mb-10"
+          className="text-3xl md:text-4xl font-bold text-center mb-12"
         >
           Projects
         </h1>
         <div className="flex justify-center items-center">
-          <div className="my-5 md:flex md:flex-row md:gap-x-10 flex flex-col justify-center items-center px-10">
+          <div className="flex flex-col md:flex-row md:flex-wrap md:gap-10 gap-6 justify-center items-center px-4">
             {projects.map((project) => (
               <div
                 data-aos={project.animation}
                 data-aos-delay={project.delay}
                 key={project.id}
                 id="project_card"
-                className="shadow-md w-[20rem] min-h-[20rem] text-justify rounded-lg mb-5 md:mb-0 transition-all ease-in-out duration-300 hover:scale-110"
+                className="shadow-md w-full sm:w-[20rem] min-h-[20rem] text-justify rounded-lg mb-5 md:mb-0 transition-transform ease-in-out duration-300 hover:scale-110"
               >
                 <Link to={project.link}>
                   <img
                     src={project.image}
-                    alt="instagram-clone"
-                    className="my-2 h-[12rem]"
+                    alt={project.name}
+                    className="my-2 h-[12rem] w-full object-cover rounded-t-lg"
                   />
                   <hr />
-                  <div className="px-5 py-2">
+                  <div className="px-5 py-4">
                     <h1 className="text-xl font-semibold">{project.name}</h1>
-                    <div className="flex flex-wrap justify-start gap-2 my-5">
+                    <div className="flex flex-wrap justify-start gap-2 mt-4">
                       {project.skills.map((skill, index) => (
                         <i
                           key={index}
-                          className={`${skill}bg-orange-500 bx-sm text-white`}
+                          className={`${skill} bg-orange-500 bx-sm text-white`}
                         ></i>
                       ))}
                     </div>
