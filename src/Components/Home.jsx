@@ -353,7 +353,7 @@ const Home = () => {
       </section>
       <section
         id={"projects"}
-        className="w-2/3 mx-auto md:h-[80vh] md:mt-0 mt-28"
+        className="sm:w-2/3 mx-auto md:h-[80vh] md:mt-0 mt-28"
       >
         <h1
           data-aos="slide-right"
