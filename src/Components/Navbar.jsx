@@ -51,7 +51,7 @@ const Navbar = () => {
           ))}
         </div>
       )}
-      <div className="text-lg top-[4rem] items-center hidden md:block">
+      <div className="text-lg items-center hidden md:block">
         {menuLinks.map((link) => (
           <Link
             id="nav-links"
@@ -61,7 +61,7 @@ const Navbar = () => {
             smooth={true}
             offset={-100}
             duration={1000}
-            className="font-semibold hover:text-orange-500 text-sm transition-all duration-500 ease-in-out cursor-pointer"
+            className="font-semibold px-6 hover:text-orange-500 text-sm transition-all duration-500 ease-in-out cursor-pointer"
           >
             {link.title}
           </Link>
