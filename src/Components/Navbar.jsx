@@ -15,7 +15,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex fixed shadow-sm w-full sm:justify-start justify-between bg-white items-center py-2 sm:px-10 sm:py-5">
+    <div className="flex fixed shadow-sm max-w-full w-full sm:justify-start justify-between bg-white items-center py-2 sm:px-10 sm:py-5">
       <Link
         to="home"
         spy={true}
@@ -28,10 +28,10 @@ const Navbar = () => {
       </Link>
       {isOpen && (
         <div
-          className={`text-2xl bg-white absolute w-[20rem] left-5 top-[5rem] mx-auto flex flex-col justify-center items-center h-[20rem] gap-y-10 transition-all ease-in-out duration-1000 transform md:hidden ${
+          className={`text-2xl bg-white absolute z-10 w-[20rem] left-5 top-[4rem] mx-auto flex flex-col justify-center items-center h-[20rem] gap-y-10 transition-all ease-in-out duration-1000 transform md:hidden ${
             isOpen
-              ? "translate-x-0 opacity-100" // Visible state
-              : "-translate-x-[200%] opacity-0" // Hidden state with slide up
+              ? "translate-y-0 opacity-100" // Visible state
+              : "-translate-y-[200%] opacity-0" // Hidden state with slide up
           }`}
         >
           {menuLinks.map((link) => (

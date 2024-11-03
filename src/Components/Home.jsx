@@ -19,8 +19,8 @@ const Home = () => {
   useEffect(() => {
     AOS.init({
       offset: 100,
-      duration: 500, // Animation duration (in milliseconds)
-      // once: true,
+      duration: 300, // Animation duration (in milliseconds)
+      once: true,
       easing: "ease-in", // Animation only happens once
     });
   }, []);
@@ -101,12 +101,12 @@ const Home = () => {
   ];
 
   return (
-    <section id="main" className="min-h-screen">
+    <section id="main" className="min-h-screen pt-10">
       <section
         id="home"
-        className="sm:flex md:flex-row flex flex-col justify-center items-center h-screen md:px-20 px-5 overflow-x-hidden"
+        className="sm:flex md:flex-row flex flex-col justify-center items-center md:px-20 px-5 overflow-x-hidden"
       >
-        <div className="md:w-6/12 sm:p-20 p-10">
+        <div className="max-w-3xl sm:p-20 mt-10">
           <div className="flex justify-start items-center mb-5">
             <h3
               data-aos="fade-right"
@@ -162,7 +162,7 @@ const Home = () => {
         </div>
       </section>
       <section
-        className="sm:w-2/3 md:h-[80vh] mx-auto rounded-md sm:px-10 px-4 py-12"
+        className="sm:w-2/3 md:h-[60vh] mx-auto rounded-md sm:px-10 px-4 py-5"
         id="skills"
       >
         <h1
@@ -263,7 +263,7 @@ const Home = () => {
       </section>
 
       <section
-        className="max-w-5xl mx-auto sm:px-10 px-4 py-12 rounded-md md:mt-0 mt-28"
+        className="max-w-5xl mx-auto sm:px-10 px-4 py-8 rounded-md md:mt-0 mt-28"
         id="experience"
       >
         <h1
@@ -359,7 +359,7 @@ const Home = () => {
 
       <section
         id="projects"
-        className="max-w-5xl min-h-screen mx-auto md:h-[80vh] py-12 md:mb-28 mt-28"
+        className="max-w-5xl h-full mx-auto md:h-[80vh] py-12 my-28"
       >
         <h1
           data-aos="slide-right"

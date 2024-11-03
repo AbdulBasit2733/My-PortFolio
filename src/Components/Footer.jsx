@@ -1,7 +1,7 @@
 import { Link } from "react-scroll";
 const Footer = () => {
   return (
-    <div className="sm:h-20 h-36 bottom-0">
+    <div className="bottom-0 md:mt-52">
       <div className="py-5 flex justify-between items-center sm:px-20 md:px-10 lg:px-44 px-3 text-sm">
         <p className="flex sm:space-x-5 gap-x-3 items-center">
           <p id="footer" className="font-bold text-orange-500">
