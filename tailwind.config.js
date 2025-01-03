@@ -10,7 +10,24 @@ export default {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+         background:"#0F0F0F",
+         primary:"#F97300",
+         slate: {
+          50: '#f8fafc',    // Very light slate gray
+          100: '#f1f5f9',   // Light slate gray
+          200: '#e2e8f0',   // Slightly darker light slate gray
+          300: '#cbd5e1',   // Medium-light slate gray
+          400: '#94a3b8',   // Medium slate gray
+          500: '#64748b',   // Darker medium slate gray
+        },
+
+      },
+      backgroundImage:{
+        bg_hero:'url(/svg/cccoil.svg)'
+      }
+    },
   },
   plugins: [addVariablesForColors],
 }
